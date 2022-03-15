@@ -4,12 +4,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 
 import org.junit.jupiter.api.Test;
-import org.mockito.Mock;
+import org.mockito.Mockito;
 
 class ExampleTest {
 
-   @Mock
-   private Callee calleeMock;
+   private Callee calleeMock = Mockito.mock(Callee.class);
 
    @Test
    public void test() {
